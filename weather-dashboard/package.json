@@ -1,0 +1,14 @@
+{
+  "name": "weather-dashboard",
+  "version": "1.0.0",
+  "description": "Modern weather dashboard with real-time data",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend",
+    "start": "npm start --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
