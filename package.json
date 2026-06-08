@@ -1,0 +1,14 @@
+{
+  "name": "rma-portal",
+  "version": "1.0.0",
+  "description": "Return Merchandise Authorization Portal",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend",
+    "start": "npm start --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
